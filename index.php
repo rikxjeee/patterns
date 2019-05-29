@@ -11,4 +11,6 @@ $off = new TurnOff($bulb);
 $switch = new LightSwitch();
 
 $switch->switchLight($on);
+$switch->switchLight($on);
+
 $switch->switchLight($off);

@@ -3,13 +3,26 @@
 
 class Light
 {
+    private $on = false;
+
     public function turnOn()
     {
-        echo 'Lights are turned on.'.PHP_EOL;
+        if(!$this->on) {
+            echo 'Lights are turned on.' . PHP_EOL;
+            $this->on = true;
+        }else {
+            echo 'Lights are already on' . PHP_EOL;
+        }
     }
 
     public function turnOff()
     {
-        echo 'Lights are turned off.'.PHP_EOL;
+        if ($this->on) {
+            echo 'Lights are turned off.' . PHP_EOL;
+            $this->on = false;
+        }else{
+
+            echo 'Lights are already turned off.'.PHP_EOL;
+        }
     }
 }
