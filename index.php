@@ -10,8 +10,8 @@ $hand = new HandOfTheQueen('Tyrion Lannister', 20, 'Imp');
 $wildling = new Wildling('Tormund', 20, 'Bane of giants');
 $westeros = new Realm();
 
-$westeros->addEmployee($nightWatch);
-$westeros->addEmployee($hand);
-$westeros->addEmployee($wildling);
+$westeros->addCharacter($nightWatch);
+$westeros->addCharacter($hand);
+$westeros->addCharacter($wildling);
 
-echo $westeros->getEmployeeList();
+echo $westeros->getCharacterList();

@@ -8,12 +8,12 @@ class Realm
      */
     private $employees = [];
 
-    public function addEmployee(Character $employee)
+    public function addCharacter(Character $employee)
     {
         $this->employees[] = $employee;
     }
 
-    public function getEmployeeList(): string
+    public function getCharacterList(): string
     {
         $string = '';
         $employees = $this->employees;
