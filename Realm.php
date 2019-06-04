@@ -1,10 +1,10 @@
 <?php
 
 
-class Realm
+class Realm implements Character
 {
     /**
-     * @var Character array
+     * @var Character[] array
      */
     private $employees = [];
 
@@ -13,7 +13,7 @@ class Realm
         $this->employees[] = $employee;
     }
 
-    public function getCharacterList(): string
+    public function getName(): string
     {
         $string = '';
         $employees = $this->employees;
