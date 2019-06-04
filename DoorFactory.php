@@ -9,5 +9,6 @@ abstract class DoorFactory
     {
         $door = $this->makeDoor();
         $door->getType();
+        return $door;
     }
 }

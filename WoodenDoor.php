@@ -4,6 +4,6 @@ class WoodenDoor implements DoorInterface
 {
     public function getType()
     {
-        echo 'This is a wooden door.';
+        return 'This is a wooden door.';
     }
 }
