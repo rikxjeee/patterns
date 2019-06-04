@@ -23,7 +23,7 @@ class NewsProvider implements SplSubject
     public function notify()
     {
         foreach ($this->subscribers as $subscriber){
-            $subscriber->update($this);
+            $subscriber->update($this->news);
         }
     }
 

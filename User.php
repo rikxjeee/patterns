@@ -12,6 +12,6 @@ class User implements SplObserver
 
     public function update(SplSubject $subject)
     {
-        echo 'Hi ' . $this->name . '! Received one Newsletter!: '.$subject->getNews()->getTitle().PHP_EOL;
+        echo 'Hi ' . $this->name . '! Received one Newsletter!: '.$subject->getTitle().PHP_EOL;
     }
 }
