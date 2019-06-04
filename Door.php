@@ -12,11 +12,16 @@ class Door implements DoorInterface
      * @var int
      */
     private $height;
+    /**
+     * @var string
+     */
+    private $type;
 
-    public function __construct(int $height, int $width)
+    public function __construct(int $height, int $width, string $type)
     {
         $this->height = $height;
         $this->width = $width;
+        $this->type = $type;
     }
 
     public function getHeight()
@@ -27,5 +32,13 @@ class Door implements DoorInterface
     public function getWidth()
     {
         return $this->width;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType(): string
+    {
+        return $this->type;
     }
 }
