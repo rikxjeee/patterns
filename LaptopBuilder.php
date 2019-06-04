@@ -76,6 +76,14 @@ class LaptopBuilder
 
     public function build()
     {
-        return new Laptop($this);
+        $laptop = new Laptop($this->touchScreen, $this->numPad, $this->VGA, $this->SSD, $this->RAM, $this->HDD);
+
+        $this->touchScreen = false;
+        $this->numPad = false;
+        $this->VGA = 'Intel HD';
+        $this->SSD = false;
+        $this->RAM = 4;
+        $this->HDD = 1;
+        return $laptop;
     }
 }

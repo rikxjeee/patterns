@@ -10,15 +10,25 @@ class Laptop
     private $RAM;
     private $HDD;
 
-    public function __construct(LaptopBuilder $builder)
+    /**
+     * Laptop constructor.
+     * @param $touchScreen
+     * @param $numPad
+     * @param $VGA
+     * @param $SSD
+     * @param $RAM
+     * @param $HDD
+     */
+    public function __construct($touchScreen, $numPad, $VGA, $SSD, $RAM, $HDD)
     {
-        $this->touchScreen = $builder->touchScreen;
-        $this->numPad = $builder->numPad;
-        $this->VGA = $builder->VGA;
-        $this->SSD = $builder->SSD;
-        $this->RAM = $builder->RAM;
-        $this->HDD = $builder->HDD;
+        $this->touchScreen = $touchScreen;
+        $this->numPad = $numPad;
+        $this->VGA = $VGA;
+        $this->SSD = $SSD;
+        $this->RAM = $RAM;
+        $this->HDD = $HDD;
     }
+
 
     public function __toString()
     {
